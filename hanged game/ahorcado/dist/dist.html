@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'dist.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJkaXN0LmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5WaXN1YWxpemFkb3IyPC90aXRsZT4KICAgIDx2ZW5kb3I+QXBwbGljYXRpb24gdmVuZG9yPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+QXBwbGljYXRpb24gZGVzY3JpcHRpb248L2Rlc2NyaXB0aW9uPgogICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgPC9pbmZvcm1hdGlvbj4KICA8cmVzb3VyY2VzPgogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgPGphciBocmVmPSJkaXN0LmphciIgc2l6ZT0iMzY2NDI1NTUiIGRvd25sb2FkPSJudWxsIiAvPgogIDwvcmVzb3VyY2VzPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIG1haW4tY2xhc3M9ImFob3JjYWRvLmluaWNpYWwiICBuYW1lPSJWaXN1YWxpemFkb3IyIiAvPgogIDx1cGRhdGUgY2hlY2s9ImJhY2tncm91bmQiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedahorcado() {
+        dtjava.embed(
+            {
+                id : 'ahorcado',
+                url : 'dist.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '0',
+                height : '0',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJkaXN0LmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5WaXN1YWxpemFkb3IyPC90aXRsZT4KICAgIDx2ZW5kb3I+QXBwbGljYXRpb24gdmVuZG9yPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+QXBwbGljYXRpb24gZGVzY3JpcHRpb248L2Rlc2NyaXB0aW9uPgogICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgPC9pbmZvcm1hdGlvbj4KICA8cmVzb3VyY2VzPgogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgPGphciBocmVmPSJkaXN0LmphciIgc2l6ZT0iMzY2NDI1NTUiIGRvd25sb2FkPSJudWxsIiAvPgogIDwvcmVzb3VyY2VzPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIG1haW4tY2xhc3M9ImFob3JjYWRvLmluaWNpYWwiICBuYW1lPSJWaXN1YWxpemFkb3IyIiAvPgogIDx1cGRhdGUgY2hlY2s9ImJhY2tncm91bmQiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedahorcado);
+</script>
+
+</head><body>
+<h2>Test page for <b>Visualizador2</b></h2>
+  <b>Webstart:</b> <a href='dist.jnlp' onclick="return launchApplication('dist.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
